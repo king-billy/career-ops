@@ -1,0 +1,73 @@
+# Manual Check — Companies Without Direct API Access
+# The career-ops scanner uses Google websearch for these, which may miss listings.
+# Check these career pages directly on a regular basis.
+#
+# Companies with Greenhouse/Ashby/Lever API (fully automated) are NOT listed here.
+# Two companies use Workday (marked) — Workday is especially hard to crawl.
+
+# ── Workday Portals (highest miss rate) ──────────────────────────────────────
+Check Point Software          https://checkpoint.wd1.myworkdayjobs.com/CheckPointCareers
+NVIDIA                        https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite
+
+# ── Big Tech (custom portals, well indexed but not API) ──────────────────────
+Amazon / AWS                  https://www.amazon.jobs
+Google / Alphabet             https://careers.google.com
+Microsoft                     https://careers.microsoft.com
+Meta                          https://www.metacareers.com
+Apple                         https://jobs.apple.com
+IBM                           https://www.ibm.com/us-en/employment
+Oracle                        https://careers.oracle.com
+Intel                         https://jobs.intel.com
+AMD                           https://jobs.amd.com
+
+# ── Financial / Banks ────────────────────────────────────────────────────────
+JPMorgan Chase                https://careers.jpmorgan.com
+Bank of America               https://careers.bankofamerica.com
+Goldman Sachs                 https://www.goldmansachs.com/careers
+Citigroup                     https://jobs.citi.com
+Bloomberg                     https://careers.bloomberg.com
+Fidelity Investments          https://jobs.fidelity.com
+State Street                  https://statestreet.com/us/en/individual/our-firm/careers
+
+# ── Cybersecurity / Enterprise Tech ─────────────────────────────────────────
+Palo Alto Networks            https://jobs.paloaltonetworks.com/en/jobs
+Splunk / Cisco (SIEM)         https://jobs.cisco.com
+Cisco                         https://jobs.cisco.com
+Arista Networks               https://www.arista.com/en/careers
+Juniper Networks              https://jobs.juniper.net/careers
+Fortinet                      https://www.fortinet.com/corporate/careers
+Okta                          https://www.okta.com/company/careers
+CyberArk                      https://careers.cyberark.com
+Qualys                        https://www.qualys.com/company/careers
+ServiceNow                    https://www.servicenow.com/careers.html
+Broadcom                      https://careers.broadcom.com
+
+# ── Consulting / DFIR Firms ──────────────────────────────────────────────────
+Deloitte                      https://apply2.deloitte.com
+EY (Ernst & Young)            https://careers.ey.com
+PwC                           https://www.pwc.com/us/en/careers.html
+KPMG                          https://jobs.kpmg.com
+Kroll                         https://www.kroll.com/en/careers
+FTI Consulting                https://www.fticonsulting.com/careers
+Ankura Consulting             https://ankura.com/careers
+Booz Allen Hamilton           https://careers.boozallen.com
+Leidos                        https://careers.leidos.com
+Guidehouse                    https://guidehouse.com/careers
+Accenture                     https://www.accenture.com/us-en/careers
+Cognizant                     https://careers.cognizant.com
+Infosys                       https://career.infosys.com
+
+# ── Other Tech / SaaS ────────────────────────────────────────────────────────
+OpenAI                        https://openai.com/careers
+Salesforce                    https://careers.salesforce.com
+Twilio                        https://www.twilio.com/en-us/company/jobs
+Gong                          https://www.gong.io/careers
+Genesys                       https://www.genesys.com/careers
+Talkdesk                      https://www.talkdesk.com/careers
+Dialpad                       https://www.dialpad.com/careers
+Wayfair                       https://www.wayfair.com/careers
+Retool                        https://retool.com/careers
+LivePerson                    https://liveperson.com/company/careers
+Cognigy                       https://careers.cognigy.com
+Make.com                      https://www.make.com/en/careers
+Langfuse                      https://langfuse.com/careers

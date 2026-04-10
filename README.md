@@ -22,6 +22,7 @@ Career-Ops turns Claude Code into a full job search command center. Instead of m
 
 - **Evaluates offers** with a structured A-F scoring system (10 weighted dimensions)
 - **Generates tailored PDFs** -- ATS-optimized CVs customized per job description
+- **Writes cover letters** -- motivation-first, not CV regurgitation; same visual design as the CV
 - **Scans portals** automatically (Greenhouse, Ashby, Lever, company pages)
 - **Processes in batch** -- evaluate 10+ offers in parallel with sub-agents
 - **Tracks everything** in a single source of truth with integrity checks
@@ -43,6 +44,7 @@ Built by someone who used it to evaluate 740+ job offers, generate 100+ tailored
 | **Interview Story Bank** | Accumulates STAR+Reflection stories across evaluations -- 5-10 master stories that answer any behavioral question |
 | **Negotiation Scripts** | Salary negotiation frameworks, geographic discount pushback, competing offer leverage |
 | **ATS PDF Generation** | Keyword-injected CVs with Space Grotesk + DM Sans design |
+| **Cover Letter Generation** | Motivation-first letters that answer "why this company, why this role" — not a recap of the CV. Same visual identity as the CV so they read as a set |
 | **Portal Scanner** | 45+ companies pre-configured (Anthropic, OpenAI, ElevenLabs, Retool, n8n...) + custom queries across Ashby, Greenhouse, Lever, Wellfound |
 | **Batch Processing** | Parallel evaluation with `claude -p` workers |
 | **Dashboard TUI** | Terminal UI to browse, filter, and sort your pipeline |
@@ -93,9 +95,10 @@ Career-ops is a single slash command with multiple modes:
 /career-ops {paste a JD}   → Full auto-pipeline (evaluate + PDF + tracker)
 /career-ops scan           → Scan portals for new offers
 /career-ops pdf            → Generate ATS-optimized CV
+/career-ops cover          → Generate motivation-first cover letter (or `cover 042` to reuse report #42)
 /career-ops batch          → Batch evaluate multiple offers
 /career-ops tracker        → View application status
-/career-ops apply          → Fill application forms with AI
+/career-ops apply          → Application bundle: CV + cover letter + open-ended answers
 /career-ops pipeline       → Process pending URLs
 /career-ops contacto       → LinkedIn outreach message
 /career-ops deep           → Deep company research
@@ -172,6 +175,7 @@ career-ops/
 │   └── ...
 ├── templates/
 │   ├── cv-template.html         # ATS-optimized CV template
+│   ├── cover-template.html      # Cover letter template (matches CV visual identity)
 │   ├── portals.example.yml      # Scanner config template
 │   └── states.yml               # Canonical statuses
 ├── batch/
@@ -237,6 +241,7 @@ Career-Ops convierte Claude Code en un centro de mando de busqueda de empleo. En
 
 - **Evalua ofertas** con scoring estructurado A-F (10 dimensiones ponderadas)
 - **Genera PDFs personalizados** -- CVs ATS-optimizados por oferta
+- **Escribe cartas de presentacion** -- motivadas (por que esta empresa, por que este rol), no un resumen del CV
 - **Escanea portales** automaticamente (Greenhouse, Ashby, Lever, webs de empresas)
 - **Procesa en batch** -- evalua 10+ ofertas en paralelo con sub-agentes
 - **Trackea todo** en una fuente de verdad unica con checks de integridad
@@ -305,9 +310,10 @@ Career-ops es un unico slash command con multiples modos:
 /career-ops {pega un JD}   → Pipeline completo (evaluar + PDF + tracker)
 /career-ops scan           → Escanear portales
 /career-ops pdf            → Generar CV ATS-optimizado
+/career-ops cover          → Generar carta de presentacion motivada (o `cover 042` para reusar el report #42)
 /career-ops batch          → Evaluar ofertas en batch
 /career-ops tracker        → Ver estado de aplicaciones
-/career-ops apply          → Rellenar formularios con IA
+/career-ops apply          → Bundle de candidatura: CV + carta + respuestas a preguntas abiertas
 /career-ops pipeline       → Procesar URLs pendientes
 /career-ops contacto       → Mensaje LinkedIn outreach
 /career-ops deep           → Research profundo de empresa

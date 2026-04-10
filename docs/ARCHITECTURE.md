@@ -49,7 +49,8 @@
 5. **Score**: Weighted average across 10 dimensions (1-5)
 6. **Report**: Save as `reports/{num}-{company}-{date}.md`
 7. **PDF**: Generate ATS-optimized CV (`generate-pdf.mjs`)
-8. **Track**: Write TSV to `batch/tracker-additions/`, auto-merged
+8. **Cover letter** (optional, score ≥ 4.0): Generate motivation-first letter via `modes/cover.md` + `templates/cover-template.html`, reusing the same `generate-pdf.mjs` pipeline
+9. **Track**: Write TSV to `batch/tracker-additions/`, auto-merged
 
 ## Batch Processing
 
@@ -78,13 +79,15 @@ article-digest.md        →  Proof points for matching
 config/profile.yml       →  Candidate identity
 portals.yml              →  Scanner configuration
 templates/states.yml     →  Canonical status values
-templates/cv-template.html → PDF generation template
+templates/cv-template.html → CV PDF generation template
+templates/cover-template.html → Cover letter PDF generation template
 ```
 
 ## File Naming Conventions
 
 - Reports: `{###}-{company-slug}-{YYYY-MM-DD}.md` (3-digit zero-padded)
-- PDFs: `cv-candidate-{company-slug}-{YYYY-MM-DD}.pdf`
+- CV PDFs: `cv-candidate-{company-slug}-{YYYY-MM-DD}.pdf`
+- Cover letter PDFs: `cover-{candidate-slug}-{company-slug}-{YYYY-MM-DD}.pdf`
 - Tracker TSVs: `batch/tracker-additions/{id}.tsv`
 
 ## Pipeline Integrity

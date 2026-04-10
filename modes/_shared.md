@@ -72,7 +72,7 @@ After detecting archetype, read `modes/_profile.md` for the user's specific fram
 
 ### ALWAYS
 
-0. **Cover letter:** If the form allows it, ALWAYS include one. Same visual design as CV. JD quotes mapped to proof points. 1 page max.
+0. **Cover letter:** If the form allows it, ALWAYS include one — generate it via `modes/cover.md`. Motivation-first, not a CV recap: answer "why this company, why this role" in the first paragraph. Same visual design as CV so the two read as a set. 1 page max, ideally a half-page.
 1. Read cv.md, _profile.md, and article-digest.md (if exists) before evaluating
 1b. **First evaluation of each session:** Run `node cv-sync-check.mjs`. If warnings, notify user.
 2. Detect the role archetype and adapt framing per _profile.md

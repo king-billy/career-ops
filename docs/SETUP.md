@@ -60,9 +60,10 @@ Then paste a job offer URL or description. Career-ops will automatically evaluat
 | Search for offers | `/career-ops scan` |
 | Process pending URLs | `/career-ops pipeline` |
 | Generate a PDF | `/career-ops pdf` |
+| Generate a cover letter | `/career-ops cover` (or `cover 042` to reuse report #42) |
 | Batch evaluate | `/career-ops batch` |
 | Check tracker status | `/career-ops tracker` |
-| Fill application form | `/career-ops apply` |
+| Build application bundle (CV + cover + answers) | `/career-ops apply` |
 
 ## Verify Setup
 
