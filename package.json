@@ -16,9 +16,16 @@
     "liveness": "node check-liveness.mjs",
     "scrape": "node scan-browser.mjs scrape",
     "scrape:batch": "node scan-browser.mjs scrape-batch",
-    "scrape:probe": "node scan-browser.mjs probe"
+    "scrape:probe": "node scan-browser.mjs probe",
+    "scan": "node scan.mjs"
   },
-  "keywords": ["ai", "job-search", "claude-code", "career", "automation"],
+  "keywords": [
+    "ai",
+    "job-search",
+    "claude-code",
+    "career",
+    "automation"
+  ],
   "author": "Santiago Fernández de Valderrama <hi@santifer.io> (https://santifer.io)",
   "homepage": "https://santifer.io",
   "repository": {
@@ -27,6 +34,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "js-yaml": "^4.1.1",
     "playwright": "^1.58.1"
   }
 }
